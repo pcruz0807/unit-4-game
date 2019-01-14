@@ -5,37 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
     <script src="https://code.jquery.com/jquery.js"></script>
+    
     <title>Crystal Collector</title>
 </head>
+
+<style>
+.header {
+    text-align: center;
+    color: white;
+    background:#6610f2;
+    padding: 10px;
+}
+
+
+
+</style>
 <body>
     <div class="header">
-        <h1>Crystal Collector</h1>
+        <h1 class="header">The Crystal Collector Game</h1>
     </div>
 
-    <h2>The rules</h2>
+    <br>
+    
+   
+   
+    <h2>The Rules</h2>
+
+    <br>
     <p>You will be given a random number at the start of the game.  There are four crystals to choose from.  Each Crystal will a specific amount of points to your total score.  When you match your total score to the random number, you win the game.  If your total score goes over the ramdom number, game over.</p>
 
     <p>The value of each crystal is hidden until you click it.  A new value to each crystal will change when a new game starts.</p>
-
-    <h3 id="score">Score:</h3>
-
-    <h3 id="yourScore">Your Score:</h3>
-    <br><br>
-
-    <h4 id="wins">Wins:</h4>
-    <br>
-    <h4 id="loses">Loses:</h4>
-
-    <br><br>
-
-<button><img id="blue" src="assets/images/blue.png" height="200" width="200" alt="Blue"></button>
-<button><img id="orange" src="assets/images/orange.png" height="200" width="200" alt="Orange"></button>
-<button><img id="purple" src="assets/images/purple.png" height="200" width="200" alt="Purple"></button>
-<button><img id="red" src="assets/images/red.png" height="200" width="200" alt="Red"></button>
-
-
     
+    
+    <h3>Score: <span id="score"></span></h3>
+
+    <h3>Your Score: <span id="yourScore"></span></h3>
+    <br><br>
+
+    <h4>Wins: <span id="wins"></span></h4>
+    <br>
+    <h4>Loses: <span id="losses"></span></h4>
+
+    <br><br>
+
+<button><img id="blue" src="assets/images/blue.png" height="150" width="150" alt="Blue"></button>
+<button><img id="orange" src="assets/images/orange.png" height="150" width="150" alt="Orange"></button>
+<button><img id="purple" src="assets/images/purple.png" height="150" width="150" alt="Purple"></button>
+<button><img id="red" src="assets/images/red.png" height="150" width="150" alt="Red"></button>
+
+
+<script src="assets/javascript/game.js"></script> 
 </body>
 </html>
