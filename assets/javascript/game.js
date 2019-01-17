@@ -4,12 +4,13 @@ $(document).ready(function(){
     $('#score').text(random);
 
 
-
+// Declaring my Vars
 var wins = 0;
 var losses = 0;
 var scoreTotal = 0;
 var numbersGenerated = []
 
+//My function for the game to generate each stone its numbers
 function randomNumbers() {
     for (var i = 0; i < 4; i++){
         var num = Math.floor(Math.random() * 11+1);
@@ -18,7 +19,7 @@ function randomNumbers() {
     console.log(numbersGenerated)
 }
 
-// Activating the stones
+// Gotta activate the stones
 
 $('#blue').on("click", function() {
     scoreTotal = scoreTotal + numbersGenerated[0];
@@ -74,6 +75,8 @@ $('#red').on("click", function() {
 })
 
 randomNumbers();
+
+//reset the game 
 
 function reset () {
     random=Math.floor(Math.random() * 101+19);
